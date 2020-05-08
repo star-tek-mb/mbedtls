@@ -93,6 +93,7 @@ static int wsa_init_done = 0;
 #include <fcntl.h>
 #include <netdb.h>
 #include <errno.h>
+#include <sys/select.h>
 
 #define IS_EINTR( ret ) ( ( ret ) == EINTR )
 
