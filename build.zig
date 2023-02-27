@@ -19,7 +19,7 @@ pub fn build(b: *std.Build) void {
         lib.linkSystemLibrary("ws2_32");
     }
 
-    lib.installHeadersDirectory("include/mbedtls", "mbedtls");
+    lib.installHeadersDirectory("include", ".");
     lib.install();
 }
 
